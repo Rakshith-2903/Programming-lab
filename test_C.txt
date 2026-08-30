@@ -1,0 +1,32 @@
+read  #  Read Matrix A 
+istore 0
+read
+istore 1
+read
+istore 2
+read
+istore 3
+read  # Read Matrix B 
+istore 4
+read
+istore 5
+read
+istore 6
+read
+istore 7 
+iload 0  # Compute and Print a11 + b11
+iload 4
+iadd
+print 
+iload 1  # Compute and Print a12 + b12
+iload 5
+iadd
+print
+iload 2  # Compute and Print a21 + b21 
+iload 6
+iadd
+print
+iload 3   # Compute and Print a22 + b22 
+iload 7
+iadd
+print

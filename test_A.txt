@@ -1,0 +1,46 @@
+read   #
+istore 0
+read
+istore 1
+read
+istore 2
+iload 0  #
+istore 3 
+iload 1
+iload 3
+isub
+iflt 14
+ldc 0
+ifeq 16
+iload 1  #
+istore 3
+iload 2  #
+iload 3
+isub
+iflt 22
+ldc 0
+ifeq 24
+iload 2  #
+istore 3
+iload 0  ###
+istore 4
+iload 1  #
+iload 4
+isub
+ifgt 32
+ldc 0
+ifeq 34
+iload 1   #
+istore 4
+iload 2  #
+iload 4
+isub
+ifgt 40
+ldc 0
+ifeq 42
+iload 2  #
+istore 4
+iload 3  #
+print
+iload 4
+print
